@@ -79,12 +79,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(ProjectDir)\dev\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);C:\dev\lib;$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <LibraryPath>$(VC_LibraryPath_x64);C:\dev\lib;$(WindowsSDK_LibraryPath_x64);$(ProjectDir)\dev\lib</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(ProjectDir)\dev\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);C:\dev\lib;$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <LibraryPath>$(VC_LibraryPath_x64);C:\dev\lib;$(WindowsSDK_LibraryPath_x64);$(ProjectDir)\dev\lib</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
